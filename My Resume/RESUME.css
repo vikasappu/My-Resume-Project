@@ -1,0 +1,229 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Times New Roman";
+}
+body
+{
+background:lightcyan;
+display: flex;
+justify-content: center;
+align-content: center;
+min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1.1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left-side{
+    position: relative;
+    background: black;
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+}
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: white;
+    font-size: 20px;
+    margin-top:20px ;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 13px;
+    font-weight: lighter;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    list-style: none;
+    position: relative;
+    margin:10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: white;
+}
+.contactInfo ul li span
+{
+    color: white;
+}
+.contactInfo.education li{
+ margin-bottom: 15px;
+    line-height: 1.5;
+}
+.contactInfo.education h4{
+    color:blue;
+    font-weight: 500;
+}
+.contactInfo .education h5:nth-child(3){
+    color: white;
+    font-weight: normal;
+}
+.contactInfo.education h5{
+    color: white;
+    font-weight: 300;
+}
+.contactInfo.education h5{
+    color: white;
+    font-weight: 300;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: darkslategray;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+}
+
+.contactInfo.technical .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: darkslategray;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.technical .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+}
+.contactInfo.soft li span{
+    line-height: 2;
+}
+.contactInfo.course {
+    line-height: 2;
+}
+
+
+
+
+
+
+.container .right-side{
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+.container .right-side .name
+{
+    margin-top: 10px;
+    font-size: 50px;
+    color: darkcyan;
+    font-family: "Bookman Old Style";
+    font-weight: bold;
+}
+.container .right-side hr{
+    margin-top: 1px;
+    border-bottom: 1px solid rgba(68, 48, 204, 0.2);
+}
+.about{
+        margin-bottom: 20px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color:black;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p{
+    text-align: justify;
+    line-height: 1.8;
+}
+.about h4{
+    line-height: 1.8;
+}
+.about h5
+{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.interest ul li{
+    list-style: none;
+
+}
+.interest ul li .fa{
+    color: darkslategray;
+    font-size: 18px;
+    width: 20px;
+}
+@media (max-width:1000px ){
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
